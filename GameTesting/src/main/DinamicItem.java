@@ -1,6 +1,7 @@
 package main;
 
 import java.awt.Graphics;
+import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 
 public class DinamicItem {
@@ -20,6 +21,14 @@ public class DinamicItem {
 	
 	public void render(Graphics g){
 		g.drawImage(image, (int)x, (int)y, null);
+	}
+	
+	public Rectangle getBounds(){
+		return getBounds(32, 32);
+	}
+	
+	public Rectangle getBounds(int width, int height){
+		return new Rectangle((int)x,(int)y,width,height);
 	}
 
 	public double getX() {

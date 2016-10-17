@@ -2,9 +2,9 @@ package main;
 
 public class Player extends DinamicItem{
 	
-	public Player(double x, double y, Game game) {
+	public Player(double x, double y, Textures tex) {
 		super(x, y);
-		image = game.getSpriteSheet().grabImage(1, 1, 32, 32);
+		image = tex.player;
 	}
 	
 	@Override

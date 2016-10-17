@@ -2,9 +2,9 @@ package main;
 
 public class Bullet extends DinamicItem{
 	
-	public Bullet(double x, double y, Game game) {
+	public Bullet(double x, double y, Textures tex) {
 		super(x,y);
-		image = game.getSpriteSheet().grabImage(2, 1, 32, 32);
+		image = tex.bullet;
 		velY=-5;
 	}
 	
